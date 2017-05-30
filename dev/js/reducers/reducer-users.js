@@ -20,6 +20,13 @@ export default function() {
         age:'23',
         description:'third letter',
         email:'Cdada@mail.com',
+    },
+    {
+        id : 104,
+        name: "E dada",
+        age:'24',
+        description:'forth letter',
+        email:'Edada@mail.com',
     }
   ]
 }
