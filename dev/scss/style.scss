@@ -3,3 +3,12 @@ $primary: #006699;
 h2 {
 	color: $primary;
 }
+
+ul li {
+	background: #eee;
+	border: 1px solid blue;
+	cursor: pointer;
+	&:hover {
+		background:#ccc
+	}
+}

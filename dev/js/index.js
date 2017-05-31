@@ -4,7 +4,7 @@ import ReactDOM from "react-dom";
 import {Provider} from 'react-redux';
 import {createStore} from 'redux'; //"{} === var createStore = redux.createStore... "
 import allReducers from './reducers'
-import App from '../components/app'
+import App from './components/app'
 
 const store = createStore(allReducers);
 
