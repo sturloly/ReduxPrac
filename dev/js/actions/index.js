@@ -5,6 +5,6 @@ export const selectUser = (user) => {
   // a action >>
   return {
     type: "USER_SELECTED",  // object type
-    payload:user    // name can be anything (payload -- convention)
+    payload:user    // name can be anything (payload -- convention), single user == 'event.target'
   }
 };

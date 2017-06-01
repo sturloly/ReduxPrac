@@ -5,28 +5,21 @@ export default function() {
         name: "A dada",
         age:'21',
         description:'first letter',
-        email:'Adada@mail.com',
+        email:'Adada@email.com',
     },
     {
         id : 102,
         name: "B dada",
         age:'22',
         description:'second letter',
-        email:'Bdada@mail.com',
+        email:'Bdada@email.com',
     },
     {
         id : 103,
         name: "C dada",
         age:'23',
         description:'third letter',
-        email:'Cdada@mail.com',
+        email:'Cdada@email.com',
     },
-    {
-        id : 104,
-        name: "E dada",
-        age:'24',
-        description:'forth letter',
-        email:'Edada@mail.com',
-    }
   ]
 }

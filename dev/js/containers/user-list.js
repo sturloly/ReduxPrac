@@ -14,7 +14,7 @@ class UserList extends Component {
           )
       })
   }
-
+//|||||| user == payload == single user == 'event.target'
   render() {
     return (
       <ul>
@@ -24,14 +24,17 @@ class UserList extends Component {
   }
 }
 
-function mapStateToProps(state){   //pass state as props to components
+function mapStateToProps(state){   //pass state as props to components, provided by {connect} also known as 'Provider'
   return {
-      users: state.users
+      users: state.users  // state.users = store = reducer-users.js, passed to props - users to the UserList Component
+      //  state = store
   };
 }
 
-function matchDispatchToProps(dispatch){
+function matchDispatchToProps(dispatch){  // pass 'selectUser'(actions) as props to component, using "dispatch param" provided by {connect}
   return bindActionCreators({selectUser: selectUser}, dispatch)
 }
 
 export default connect(mapStateToProps,matchDispatchToProps)(UserList);
+
+// UserList component gets data by mapStateToProps from store (reducer-users) through {connect}
